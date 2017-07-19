@@ -1,9 +1,9 @@
 object frmCCJSO_JournalMsgClient: TfrmCCJSO_JournalMsgClient
-  Left = 189
-  Top = 189
+  Left = 137
+  Top = 130
   Width = 1305
   Height = 675
-  Caption = #1046#1091#1088#1085#1072#1083' '#1088#1077#1075#1080#1089#1090#1088#1072#1094#1080#1080' '#1086#1090#1087#1088#1072#1074#1082#1080' '#1091#1074#1077#1076#1086#1084#1083#1077#1085#1080#1081' '#1082#1083#1080#1077#1085#1090#1072#1084' '
+  Caption = 'Журнал регистрации отправки уведомлений клиентам '
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -20,7 +20,7 @@ object frmCCJSO_JournalMsgClient: TfrmCCJSO_JournalMsgClient
   object pnlCond: TPanel
     Left = 0
     Top = 0
-    Width = 1289
+    Width = 1297
     Height = 26
     Align = alTop
     BevelOuter = bvNone
@@ -63,7 +63,7 @@ object frmCCJSO_JournalMsgClient: TfrmCCJSO_JournalMsgClient
     object pnlCond_Fields: TPanel
       Left = 35
       Top = 0
-      Width = 1254
+      Width = 1262
       Height = 26
       Align = alClient
       BevelOuter = bvNone
@@ -73,49 +73,49 @@ object frmCCJSO_JournalMsgClient: TfrmCCJSO_JournalMsgClient
         Top = 9
         Width = 6
         Height = 13
-        Caption = #1089
+        Caption = 'с'
       end
       object lblJCond_End: TLabel
         Left = 144
         Top = 10
         Width = 12
         Height = 13
-        Caption = #1087#1086
+        Caption = 'по'
       end
       object lblJCond_Prefix: TLabel
         Left = 292
         Top = 10
         Width = 46
         Height = 13
-        Caption = #1055#1088#1077#1092#1080#1082#1089
+        Caption = 'Префикс'
       end
       object lblCond_Order: TLabel
         Left = 432
         Top = 10
         Width = 31
         Height = 13
-        Caption = #1047#1072#1082#1072#1079
+        Caption = 'Заказ'
       end
       object lblCond_Phone: TLabel
         Left = 557
         Top = 10
         Width = 45
         Height = 13
-        Caption = #1058#1077#1083#1077#1092#1086#1085
+        Caption = 'Телефон'
       end
       object lblCond_Pharm: TLabel
         Left = 719
         Top = 10
         Width = 79
         Height = 13
-        Caption = #1058#1086#1088#1075#1086#1074#1072#1103' '#1090#1086#1095#1082#1072
+        Caption = 'Торговая точка'
       end
       object lblCond_Type: TLabel
         Left = 913
         Top = 11
         Width = 89
         Height = 13
-        Caption = #1058#1080#1087' '#1091#1074#1077#1076#1086#1084#1083#1077#1085#1080#1103
+        Caption = 'Тип уведомления'
       end
       object edCond_Begin: TEdit
         Tag = 10
@@ -171,10 +171,10 @@ object frmCCJSO_JournalMsgClient: TfrmCCJSO_JournalMsgClient
         ItemHeight = 13
         ItemIndex = 0
         TabOrder = 4
-        Text = #1042#1089#1077
+        Text = 'Все'
         OnChange = aCondChangeExecute
         Items.Strings = (
-          #1042#1089#1077)
+          'Все')
       end
       object edCond_Order: TEdit
         Tag = 15
@@ -222,32 +222,32 @@ object frmCCJSO_JournalMsgClient: TfrmCCJSO_JournalMsgClient
         ItemHeight = 13
         ItemIndex = 0
         TabOrder = 8
-        Text = #1042#1089#1077
+        Text = 'Все'
         OnChange = aCondChangeExecute
         Items.Strings = (
-          #1042#1089#1077)
+          'Все')
       end
     end
   end
   object pnlGrid: TPanel
     Left = 0
     Top = 26
-    Width = 1289
-    Height = 611
+    Width = 1297
+    Height = 622
     Align = alClient
     Caption = 'pnlGrid'
     TabOrder = 1
     object pnlGridControl: TPanel
       Left = 1
       Top = 1
-      Width = 1287
+      Width = 1295
       Height = 26
       Align = alTop
       BevelOuter = bvNone
       Caption = 'pnlGridControl'
       TabOrder = 0
       object pnlGridControl_Show: TPanel
-        Left = 1102
+        Left = 1110
         Top = 0
         Width = 185
         Height = 26
@@ -258,7 +258,7 @@ object frmCCJSO_JournalMsgClient: TfrmCCJSO_JournalMsgClient
       object pnlGridControl_Tool: TPanel
         Left = 0
         Top = 0
-        Width = 1102
+        Width = 1110
         Height = 26
         Align = alClient
         BevelOuter = bvNone
@@ -267,12 +267,12 @@ object frmCCJSO_JournalMsgClient: TfrmCCJSO_JournalMsgClient
         object tbarTool: TToolBar
           Left = 0
           Top = 0
-          Width = 1102
+          Width = 1110
           Height = 26
           Align = alClient
           AutoSize = True
           BorderWidth = 1
-          ButtonWidth = 178
+          ButtonWidth = 76
           Caption = 'tbarTool'
           DisabledImages = FCCenterJournalNetZkz.imgMain
           EdgeBorders = []
@@ -281,14 +281,8 @@ object frmCCJSO_JournalMsgClient: TfrmCCJSO_JournalMsgClient
           List = True
           ShowCaptions = True
           TabOrder = 0
-          object tbtnItemInfo: TToolButton
-            Left = 0
-            Top = 0
-            Action = aItemInfo
-            AutoSize = True
-          end
           object tbtbRefresh: TToolButton
-            Left = 182
+            Left = 0
             Top = 0
             Action = aRefresh
             AutoSize = True
@@ -299,8 +293,8 @@ object frmCCJSO_JournalMsgClient: TfrmCCJSO_JournalMsgClient
     object GridMain: TDBGrid
       Left = 1
       Top = 27
-      Width = 1287
-      Height = 583
+      Width = 1295
+      Height = 594
       Align = alClient
       BorderStyle = bsNone
       Ctl3D = False
@@ -320,84 +314,84 @@ object frmCCJSO_JournalMsgClient: TfrmCCJSO_JournalMsgClient
         item
           Expanded = False
           FieldName = 'SCreateDate'
-          Title.Caption = #1044#1072#1090#1072' '#1089#1086#1079#1076#1072#1085#1080#1103
-          Width = 130
+          Title.Caption = 'Дата создания'
+          Width = 79
           Visible = True
         end
         item
           Expanded = False
           FieldName = 'SSMSType'
-          Title.Caption = #1058#1080#1087' '#1091#1074#1077#1076#1086#1084#1083#1077#1085#1080#1103
-          Width = 200
+          Title.Caption = 'Тип уведомления'
+          Width = 80
           Visible = True
         end
         item
           Expanded = False
           FieldName = 'SPrefix'
-          Title.Caption = #1055#1088#1077#1092#1080#1082#1089
+          Title.Caption = 'Префикс'
           Width = 70
           Visible = True
         end
         item
           Expanded = False
           FieldName = 'NOrder'
-          Title.Caption = #1047#1072#1082#1072#1079
+          Title.Caption = 'Заказ'
           Width = 70
           Visible = True
         end
         item
           Expanded = False
           FieldName = 'SPharm'
-          Title.Caption = #1058#1086#1088#1075#1086#1074#1072#1103' '#1090#1086#1095#1082#1072
-          Width = 130
+          Title.Caption = 'Торговая точка'
+          Width = 53
           Visible = True
         end
         item
           Expanded = False
           FieldName = 'SPhone'
-          Title.Caption = #1058#1077#1083#1077#1092#1086#1085
+          Title.Caption = 'Телефон'
           Width = 90
           Visible = True
         end
         item
           Expanded = False
           FieldName = 'NCash'
-          Title.Caption = #1057#1091#1084#1084#1072
-          Width = 70
+          Title.Caption = 'Сумма'
+          Width = 42
           Visible = True
         end
         item
           Expanded = False
           FieldName = 'SEmail'
           Title.Caption = 'EMail'
-          Width = 200
+          Width = 60
           Visible = True
         end
         item
           Expanded = False
           FieldName = 'SNote'
-          Title.Caption = #1057#1086#1076#1077#1088#1078#1072#1085#1080#1077' '#1091#1074#1077#1076#1086#1084#1083#1077#1085#1080#1103
-          Width = 500
+          Title.Caption = 'Содержание уведомления'
+          Width = 405
           Visible = True
         end
         item
           Expanded = False
           FieldName = 'SUSER'
-          Title.Caption = #1055#1086#1083#1100#1079#1086#1074#1072#1090#1077#1083#1100
+          Title.Caption = 'Пользователь'
           Width = 150
           Visible = True
         end
         item
           Expanded = False
           FieldName = 'IErr'
-          Title.Caption = #1050#1086#1076' '#1086#1096#1080#1073#1082#1080
+          Title.Caption = 'Код ошибки'
           Width = 70
           Visible = True
         end
         item
           Expanded = False
           FieldName = 'SErr'
-          Title.Caption = #1057#1086#1086#1073#1097#1077#1085#1080#1077' '#1086#1073' '#1086#1096#1080#1073#1082#1077
+          Title.Caption = 'Сообщение об ошибке'
           Width = 300
           Visible = True
         end>
@@ -409,27 +403,27 @@ object frmCCJSO_JournalMsgClient: TfrmCCJSO_JournalMsgClient
     Top = 74
     object aExit: TAction
       Category = 'Control'
-      Caption = #1047#1072#1082#1088#1099#1090#1100
+      Caption = 'Закрыть'
       ImageIndex = 11
       ShortCut = 27
       OnExecute = aExitExecute
     end
     object aItemInfo: TAction
       Category = 'Control'
-      Caption = #1048#1085#1092#1086#1088#1084#1072#1094#1080#1103' '#1086#1073' '#1091#1074#1077#1076#1086#1084#1083#1077#1085#1080#1080
+      Caption = 'Информация об уведомлении'
       ImageIndex = 16
       OnExecute = aItemInfoExecute
     end
     object aRefresh: TAction
       Category = 'Control'
-      Caption = #1054#1073#1085#1086#1074#1080#1090#1100
+      Caption = 'Обновить'
       ImageIndex = 4
       OnExecute = aRefreshExecute
     end
     object aCondClear: TAction
       Category = 'Condition'
-      Caption = #1054#1095#1080#1089#1090#1080#1090#1100' '#1091#1089#1083#1086#1074#1080#1103' '#1086#1090#1073#1086#1088#1072
-      Hint = #1054#1095#1080#1089#1090#1080#1090#1100' '#1091#1089#1083#1086#1074#1080#1103' '#1086#1090#1073#1086#1088#1072
+      Caption = 'Очистить условия отбора'
+      Hint = 'Очистить условия отбора'
       ImageIndex = 40
       OnExecute = aCondClearExecute
     end
@@ -440,7 +434,7 @@ object frmCCJSO_JournalMsgClient: TfrmCCJSO_JournalMsgClient
     end
     object aSlDate: TAction
       Category = 'Condition'
-      Caption = #8230
+      Caption = '…'
       OnExecute = aSlDateExecute
     end
   end

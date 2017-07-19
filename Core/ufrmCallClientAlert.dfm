@@ -14,9 +14,9 @@ inherited frmCallClientAlert: TfrmCallClientAlert
     object Label1: TLabel
       Left = 8
       Top = 2
-      Width = 110
+      Width = 63
       Height = 20
-      Caption = 'Имя клиента'
+      Caption = 'Клиент'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clNavy
       Font.Height = -16
@@ -25,7 +25,7 @@ inherited frmCallClientAlert: TfrmCallClientAlert
       ParentFont = False
     end
     object Label2: TLabel
-      Left = 209
+      Left = 251
       Top = 53
       Width = 79
       Height = 13
@@ -34,9 +34,9 @@ inherited frmCallClientAlert: TfrmCallClientAlert
     object Label3: TLabel
       Left = 7
       Top = 92
-      Width = 102
+      Width = 168
       Height = 13
-      Caption = 'Содержание звонка'
+      Caption = 'Содержание обращения (звонка)'
     end
     object Label4: TLabel
       Left = 8
@@ -58,6 +58,13 @@ inherited frmCallClientAlert: TfrmCallClientAlert
       Font.Style = [fsBold]
       ParentFont = False
     end
+    object Label5: TLabel
+      Left = 128
+      Top = 52
+      Width = 71
+      Height = 13
+      Caption = 'Город/Регион'
+    end
     object edName: TEdit
       Left = 8
       Top = 25
@@ -75,9 +82,9 @@ inherited frmCallClientAlert: TfrmCallClientAlert
       OnChange = DataChange
     end
     object lcAppealType: TDBLookupComboBox
-      Left = 210
+      Left = 251
       Top = 69
-      Width = 150
+      Width = 110
       Height = 19
       Ctl3D = False
       KeyField = 'ValueNum'
@@ -103,7 +110,7 @@ inherited frmCallClientAlert: TfrmCallClientAlert
     object lcClientType: TDBLookupComboBox
       Left = 8
       Top = 69
-      Width = 150
+      Width = 110
       Height = 19
       Color = clBtnFace
       Ctl3D = False
@@ -121,6 +128,7 @@ inherited frmCallClientAlert: TfrmCallClientAlert
       Top = 25
       Width = 89
       Height = 26
+      Color = clScrollBar
       Ctl3D = False
       Enabled = False
       Font.Charset = DEFAULT_CHARSET
@@ -132,6 +140,22 @@ inherited frmCallClientAlert: TfrmCallClientAlert
       ParentFont = False
       TabOrder = 4
       OnChange = DataChange
+    end
+    object DBLookupComboBox1: TDBLookupComboBox
+      Left = 128
+      Top = 69
+      Width = 110
+      Height = 19
+      Color = clBtnFace
+      Ctl3D = False
+      KeyField = 'ValueNum'
+      ListField = 'ValueStr'
+      ListSource = dsClientType
+      ParentCtl3D = False
+      ReadOnly = True
+      TabOrder = 5
+      TabStop = False
+      OnCloseUp = DataChange
     end
   end
   inherited PanelCaption: TPanel
@@ -207,7 +231,7 @@ inherited frmCallClientAlert: TfrmCallClientAlert
       TabOrder = 3
     end
     inherited btnAccept: TBitBtn
-      Left = 248
+      Left = 264
       Top = 0
       Width = 94
       Caption = 'Закрыть'

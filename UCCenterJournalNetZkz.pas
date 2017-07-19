@@ -1438,6 +1438,7 @@ type
     N20: TMenuItem;
     N21: TMenuItem;
     N22: TMenuItem;
+    CreateAAAAAAAAAAAAA: TMenuItem;
     {---}
     procedure pnlMouseEnter(Sender: TObject);
     procedure pnlMouseExit(Sender: TObject);

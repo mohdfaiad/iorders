@@ -58,7 +58,6 @@ type
     tbarCond: TToolBar;
     tbtnCondClear: TToolButton;
     tbarTool: TToolBar;
-    tbtnItemInfo: TToolButton;
     tbtbRefresh: TToolButton;
     qrspMain: TADOStoredProc;
     dsMain: TDataSource;
