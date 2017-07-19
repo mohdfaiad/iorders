@@ -1,0 +1,202 @@
+inherited frmCallClientAlert: TfrmCallClientAlert
+  Width = 369
+  Height = 280
+  object PanelClient: TPanel [0]
+    Left = 0
+    Top = 41
+    Width = 369
+    Height = 211
+    Align = alClient
+    BevelOuter = bvNone
+    ParentBackground = True
+    ParentColor = True
+    TabOrder = 0
+    object Label1: TLabel
+      Left = 8
+      Top = 2
+      Width = 110
+      Height = 20
+      Caption = #1048#1084#1103' '#1082#1083#1080#1077#1085#1090#1072
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clNavy
+      Font.Height = -16
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Label2: TLabel
+      Left = 177
+      Top = 53
+      Width = 79
+      Height = 13
+      Caption = #1058#1080#1087' '#1086#1073#1088#1072#1097#1077#1085#1080#1103
+    end
+    object Label3: TLabel
+      Left = 7
+      Top = 92
+      Width = 102
+      Height = 13
+      Caption = #1057#1086#1076#1077#1088#1078#1072#1085#1080#1077' '#1079#1074#1086#1085#1082#1072
+    end
+    object Label4: TLabel
+      Left = 8
+      Top = 52
+      Width = 63
+      Height = 13
+      Caption = #1058#1080#1087' '#1082#1083#1080#1077#1085#1090#1072
+    end
+    object edName: TEdit
+      Left = 8
+      Top = 25
+      Width = 353
+      Height = 26
+      Ctl3D = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clNavy
+      Font.Height = -16
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentCtl3D = False
+      ParentFont = False
+      TabOrder = 0
+      OnChange = DataChange
+    end
+    object lcAppealType: TDBLookupComboBox
+      Left = 176
+      Top = 69
+      Width = 184
+      Height = 19
+      Ctl3D = False
+      KeyField = 'ValueNum'
+      ListField = 'ValueStr'
+      ListSource = dsAppealType
+      ParentCtl3D = False
+      TabOrder = 1
+      OnCloseUp = DataChange
+    end
+    object MemoContent: TMemo
+      Left = 8
+      Top = 108
+      Width = 353
+      Height = 103
+      Ctl3D = False
+      Lines.Strings = (
+        'MemoContent')
+      ParentCtl3D = False
+      ScrollBars = ssVertical
+      TabOrder = 2
+      OnChange = DataChange
+    end
+    object lcClientType: TDBLookupComboBox
+      Left = 8
+      Top = 69
+      Width = 161
+      Height = 19
+      Color = clBtnFace
+      Ctl3D = False
+      KeyField = 'ValueNum'
+      ListField = 'ValueStr'
+      ListSource = dsClientType
+      ParentCtl3D = False
+      ReadOnly = True
+      TabOrder = 3
+      TabStop = False
+      OnCloseUp = DataChange
+    end
+  end
+  inherited PanelCaption: TPanel
+    Width = 369
+    TabOrder = 2
+    inherited lbType: TLabel
+      Width = 369
+      Font.Height = -8
+      ParentFont = False
+    end
+    inherited edCaption: TEdit
+      Top = 8
+      Width = 179
+      Height = 33
+      Font.Color = clPurple
+      Font.Height = -24
+    end
+  end
+  inherited PanelBottom: TPanel
+    Top = 252
+    Width = 369
+    Height = 28
+    DesignSize = (
+      369
+      28)
+    object lbAppealCnt: TLabel [0]
+      Left = 192
+      Top = 3
+      Width = 31
+      Height = 20
+      Alignment = taCenter
+      Caption = '888'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object btnSave: TButton [1]
+      Left = 274
+      Top = 0
+      Width = 75
+      Height = 25
+      Anchors = [akRight, akBottom]
+      Caption = #1057#1086#1093#1088#1072#1085#1080#1090#1100
+      TabOrder = 1
+      Visible = False
+      OnClick = btnSaveClick
+    end
+    object btnOrders: TButton [2]
+      Left = 8
+      Top = 0
+      Width = 85
+      Height = 25
+      Anchors = [akLeft, akBottom]
+      Caption = #1058#1077#1082#1091#1097'. '#1079#1072#1082#1072#1079#1099
+      Enabled = False
+      TabOrder = 2
+      OnClick = btnOrdersClick
+    end
+    object btnClient: TButton [3]
+      Left = 98
+      Top = 0
+      Width = 85
+      Height = 25
+      Hint = #1050#1072#1088#1090#1086#1095#1082#1072' '#1082#1083#1080#1077#1085#1090#1072
+      Anchors = [akLeft, akBottom]
+      Caption = #1050#1072#1088#1090'. '#1082#1083#1080#1077#1085#1090#1072
+      Enabled = False
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 3
+    end
+    inherited btnAccept: TBitBtn
+      Left = 263
+      Top = 0
+      Width = 94
+      Caption = #1047#1072#1082#1088#1099#1090#1100
+    end
+  end
+  inherited spIncUserEnumerator: TADOStoredProc
+    Left = 291
+    Top = 32
+  end
+  inherited spSetUserRead: TADOStoredProc
+    Left = 315
+    Top = 64
+  end
+  object dsAppealType: TDataSource
+    Left = 216
+    Top = 8
+  end
+  object dsClientType: TDataSource
+    Left = 296
+    Top = 8
+  end
+end
