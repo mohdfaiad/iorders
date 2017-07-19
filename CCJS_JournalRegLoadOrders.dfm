@@ -1,6 +1,6 @@
 object frmCCJS_JournalRegLoadOrders: TfrmCCJS_JournalRegLoadOrders
-  Left = 209
-  Top = 202
+  Left = 97
+  Top = 194
   Width = 1428
   Height = 540
   Caption = '∆урнал регистрации загрузки интернет-заказов'
@@ -970,12 +970,12 @@ object frmCCJS_JournalRegLoadOrders: TfrmCCJS_JournalRegLoadOrders
         Align = alClient
         AutoSize = True
         BorderWidth = 1
-        ButtonWidth = 76
+        ButtonHeight = 19
+        ButtonWidth = 61
         EdgeBorders = []
         EdgeInner = esNone
         EdgeOuter = esNone
         Flat = True
-        Images = FCCenterJournalNetZkz.imgMain
         Indent = 5
         List = True
         ParentShowHint = False
@@ -990,7 +990,7 @@ object frmCCJS_JournalRegLoadOrders: TfrmCCJS_JournalRegLoadOrders
           AutoSize = True
         end
         object toolbtn_MainClose: TToolButton
-          Left = 85
+          Left = 70
           Top = 0
           Action = aMain_Close
         end
@@ -1061,7 +1061,6 @@ object frmCCJS_JournalRegLoadOrders: TfrmCCJS_JournalRegLoadOrders
     end
   end
   object ActionListMain: TActionList
-    Images = FCCenterJournalNetZkz.imgMain
     Left = 1621
     Top = 119
     object aMain_MainGridRefresh: TAction

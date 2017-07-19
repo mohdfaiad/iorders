@@ -26,6 +26,8 @@ type
     lbAppealCnt: TLabel;
     Edit1: TEdit;
     Label6: TLabel;
+    DBLookupComboBox1: TDBLookupComboBox;
+    Label5: TLabel;
     procedure DataChange(Sender: TObject);
     procedure btnSaveClick(Sender: TObject);
     procedure btnOrdersClick(Sender: TObject);

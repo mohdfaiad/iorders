@@ -3,7 +3,7 @@ object FEnterpassw: TFEnterpassw
   Top = 254
   Anchors = [akLeft, akTop, akRight, akBottom]
   BorderIcons = []
-  BorderStyle = bsNone
+  BorderStyle = bsSingle
   Caption = 'IORDERS. ¬вод парол€'
   ClientHeight = 150
   ClientWidth = 281
