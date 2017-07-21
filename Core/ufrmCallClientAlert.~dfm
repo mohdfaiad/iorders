@@ -1,10 +1,10 @@
 inherited frmCallClientAlert: TfrmCallClientAlert
-  Width = 369
+  Width = 370
   Height = 280
   object PanelClient: TPanel [0]
     Left = 0
     Top = 41
-    Width = 369
+    Width = 370
     Height = 211
     Align = alClient
     BevelOuter = bvNone
@@ -14,9 +14,9 @@ inherited frmCallClientAlert: TfrmCallClientAlert
     object Label1: TLabel
       Left = 8
       Top = 2
-      Width = 110
+      Width = 63
       Height = 20
-      Caption = #1048#1084#1103' '#1082#1083#1080#1077#1085#1090#1072
+      Caption = 'Клиент'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clNavy
       Font.Height = -16
@@ -25,30 +25,50 @@ inherited frmCallClientAlert: TfrmCallClientAlert
       ParentFont = False
     end
     object Label2: TLabel
-      Left = 177
+      Left = 251
       Top = 53
       Width = 79
       Height = 13
-      Caption = #1058#1080#1087' '#1086#1073#1088#1072#1097#1077#1085#1080#1103
+      Caption = 'Тип обращения'
     end
     object Label3: TLabel
       Left = 7
       Top = 92
-      Width = 102
+      Width = 168
       Height = 13
-      Caption = #1057#1086#1076#1077#1088#1078#1072#1085#1080#1077' '#1079#1074#1086#1085#1082#1072
+      Caption = 'Содержание обращения (звонка)'
     end
     object Label4: TLabel
       Left = 8
       Top = 52
       Width = 63
       Height = 13
-      Caption = #1058#1080#1087' '#1082#1083#1080#1077#1085#1090#1072
+      Caption = 'Тип клиента'
+    end
+    object Label6: TLabel
+      Left = 272
+      Top = 2
+      Width = 84
+      Height = 20
+      Caption = 'По заказу'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clNavy
+      Font.Height = -16
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Label5: TLabel
+      Left = 128
+      Top = 52
+      Width = 71
+      Height = 13
+      Caption = 'Город/Регион'
     end
     object edName: TEdit
       Left = 8
       Top = 25
-      Width = 353
+      Width = 257
       Height = 26
       Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
@@ -62,9 +82,9 @@ inherited frmCallClientAlert: TfrmCallClientAlert
       OnChange = DataChange
     end
     object lcAppealType: TDBLookupComboBox
-      Left = 176
+      Left = 251
       Top = 69
-      Width = 184
+      Width = 110
       Height = 19
       Ctl3D = False
       KeyField = 'ValueNum'
@@ -78,7 +98,7 @@ inherited frmCallClientAlert: TfrmCallClientAlert
       Left = 8
       Top = 108
       Width = 353
-      Height = 103
+      Height = 93
       Ctl3D = False
       Lines.Strings = (
         'MemoContent')
@@ -90,7 +110,7 @@ inherited frmCallClientAlert: TfrmCallClientAlert
     object lcClientType: TDBLookupComboBox
       Left = 8
       Top = 69
-      Width = 161
+      Width = 110
       Height = 19
       Color = clBtnFace
       Ctl3D = False
@@ -103,18 +123,51 @@ inherited frmCallClientAlert: TfrmCallClientAlert
       TabStop = False
       OnCloseUp = DataChange
     end
+    object Edit1: TEdit
+      Left = 272
+      Top = 25
+      Width = 89
+      Height = 26
+      Ctl3D = False
+      Enabled = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clNavy
+      Font.Height = -16
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentCtl3D = False
+      ParentFont = False
+      TabOrder = 4
+      OnChange = DataChange
+    end
+    object DBLookupComboBox1: TDBLookupComboBox
+      Left = 128
+      Top = 69
+      Width = 110
+      Height = 19
+      Color = clBtnFace
+      Ctl3D = False
+      KeyField = 'ValueNum'
+      ListField = 'ValueStr'
+      ListSource = dsClientType
+      ParentCtl3D = False
+      ReadOnly = True
+      TabOrder = 5
+      TabStop = False
+      OnCloseUp = DataChange
+    end
   end
   inherited PanelCaption: TPanel
-    Width = 369
+    Width = 370
     TabOrder = 2
     inherited lbType: TLabel
-      Width = 369
+      Width = 370
       Font.Height = -8
       ParentFont = False
     end
     inherited edCaption: TEdit
       Top = 8
-      Width = 179
+      Width = 187
       Height = 33
       Font.Color = clPurple
       Font.Height = -24
@@ -122,13 +175,13 @@ inherited frmCallClientAlert: TfrmCallClientAlert
   end
   inherited PanelBottom: TPanel
     Top = 252
-    Width = 369
+    Width = 370
     Height = 28
     DesignSize = (
-      369
+      370
       28)
     object lbAppealCnt: TLabel [0]
-      Left = 192
+      Left = 208
       Top = 3
       Width = 31
       Height = 20
@@ -142,12 +195,12 @@ inherited frmCallClientAlert: TfrmCallClientAlert
       ParentFont = False
     end
     object btnSave: TButton [1]
-      Left = 274
+      Left = 263
       Top = 0
       Width = 75
       Height = 25
       Anchors = [akRight, akBottom]
-      Caption = #1057#1086#1093#1088#1072#1085#1080#1090#1100
+      Caption = 'Сохранить'
       TabOrder = 1
       Visible = False
       OnClick = btnSaveClick
@@ -158,7 +211,7 @@ inherited frmCallClientAlert: TfrmCallClientAlert
       Width = 85
       Height = 25
       Anchors = [akLeft, akBottom]
-      Caption = #1058#1077#1082#1091#1097'. '#1079#1072#1082#1072#1079#1099
+      Caption = 'Текущ. заказы'
       Enabled = False
       TabOrder = 2
       OnClick = btnOrdersClick
@@ -168,28 +221,28 @@ inherited frmCallClientAlert: TfrmCallClientAlert
       Top = 0
       Width = 85
       Height = 25
-      Hint = #1050#1072#1088#1090#1086#1095#1082#1072' '#1082#1083#1080#1077#1085#1090#1072
+      Hint = 'Карточка клиента'
       Anchors = [akLeft, akBottom]
-      Caption = #1050#1072#1088#1090'. '#1082#1083#1080#1077#1085#1090#1072
+      Caption = 'Карт. клиента'
       Enabled = False
       ParentShowHint = False
       ShowHint = True
       TabOrder = 3
     end
     inherited btnAccept: TBitBtn
-      Left = 263
+      Left = 264
       Top = 0
       Width = 94
-      Caption = #1047#1072#1082#1088#1099#1090#1100
+      Caption = 'Закрыть'
     end
   end
   inherited spIncUserEnumerator: TADOStoredProc
-    Left = 291
-    Top = 32
+    Left = 259
+    Top = 8
   end
   inherited spSetUserRead: TADOStoredProc
-    Left = 315
-    Top = 64
+    Left = 331
+    Top = 8
   end
   object dsAppealType: TDataSource
     Left = 216

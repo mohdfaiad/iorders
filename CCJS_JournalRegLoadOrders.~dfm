@@ -1,9 +1,9 @@
 object frmCCJS_JournalRegLoadOrders: TfrmCCJS_JournalRegLoadOrders
-  Left = 84
-  Top = 358
-  Width = 1748
-  Height = 526
-  Caption = #1046#1091#1088#1085#1072#1083' '#1088#1077#1075#1080#1089#1090#1088#1072#1094#1080#1080' '#1079#1072#1075#1088#1091#1079#1082#1080' '#1080#1085#1090#1077#1088#1085#1077#1090'-'#1079#1072#1082#1072#1079#1086#1074
+  Left = 209
+  Top = 202
+  Width = 1428
+  Height = 540
+  Caption = 'Журнал регистрации загрузки интернет-заказов'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -855,8 +855,8 @@ object frmCCJS_JournalRegLoadOrders: TfrmCCJS_JournalRegLoadOrders
   TextHeight = 13
   object pnlStatusBar: TPanel
     Left = 0
-    Top = 467
-    Width = 1732
+    Top = 492
+    Width = 1420
     Height = 21
     Align = alBottom
     BevelOuter = bvNone
@@ -865,7 +865,7 @@ object frmCCJS_JournalRegLoadOrders: TfrmCCJS_JournalRegLoadOrders
     object stbrMain: TStatusBar
       Left = 0
       Top = 0
-      Width = 1732
+      Width = 1420
       Height = 21
       Align = alClient
       Panels = <>
@@ -875,7 +875,7 @@ object frmCCJS_JournalRegLoadOrders: TfrmCCJS_JournalRegLoadOrders
   object pnlCondition: TPanel
     Left = 0
     Top = 0
-    Width = 1732
+    Width = 1420
     Height = 48
     Align = alTop
     BevelOuter = bvNone
@@ -884,24 +884,24 @@ object frmCCJS_JournalRegLoadOrders: TfrmCCJS_JournalRegLoadOrders
     object grbxCondition: TGroupBox
       Left = 0
       Top = 0
-      Width = 1732
+      Width = 1420
       Height = 48
       Align = alClient
-      Caption = ' '#1059#1089#1083#1086#1074#1080#1077' '#1086#1090#1073#1086#1088#1072' '
+      Caption = ' Условие отбора '
       TabOrder = 0
       object lblCndDatePeriod_with: TLabel
         Left = 7
         Top = 26
         Width = 47
         Height = 13
-        Caption = #1055#1077#1088#1080#1086#1076' '#1089
+        Caption = 'Период с'
       end
       object lblCndDatePeriod_toOn: TLabel
         Left = 158
         Top = 26
         Width = 12
         Height = 13
-        Caption = #1087#1086
+        Caption = 'по'
       end
       object dtCndBegin: TDateTimePicker
         Left = 60
@@ -928,7 +928,7 @@ object frmCCJS_JournalRegLoadOrders: TfrmCCJS_JournalRegLoadOrders
         Top = 25
         Width = 255
         Height = 17
-        Caption = #1087#1086#1082#1072#1079#1099#1074#1072#1090#1100' '#1090#1086#1083#1100#1082#1086' '#1079#1072#1075#1088#1091#1079#1082#1080' '#1085#1086#1074#1099#1093' '#1079#1072#1082#1072#1079#1086#1074
+        Caption = 'показывать только загрузки новых заказов'
         Checked = True
         State = cbChecked
         TabOrder = 2
@@ -939,13 +939,13 @@ object frmCCJS_JournalRegLoadOrders: TfrmCCJS_JournalRegLoadOrders
   object pnlTop: TPanel
     Left = 0
     Top = 48
-    Width = 1732
+    Width = 1420
     Height = 26
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 2
     object pnlTop_Right: TPanel
-      Left = 1375
+      Left = 1063
       Top = 0
       Width = 185
       Height = 26
@@ -955,7 +955,7 @@ object frmCCJS_JournalRegLoadOrders: TfrmCCJS_JournalRegLoadOrders
       TabOrder = 0
     end
     object pnlTop_ToolBar: TPanel
-      Left = 1560
+      Left = 1248
       Top = 0
       Width = 172
       Height = 26
@@ -1000,8 +1000,8 @@ object frmCCJS_JournalRegLoadOrders: TfrmCCJS_JournalRegLoadOrders
   object pnlGrid: TPanel
     Left = 0
     Top = 74
-    Width = 1732
-    Height = 393
+    Width = 1420
+    Height = 418
     Align = alClient
     BevelOuter = bvNone
     Caption = 'pnlGrid'
@@ -1009,8 +1009,8 @@ object frmCCJS_JournalRegLoadOrders: TfrmCCJS_JournalRegLoadOrders
     object DBGridMain: TDBGrid
       Left = 0
       Top = 0
-      Width = 1732
-      Height = 393
+      Width = 1420
+      Height = 418
       Align = alClient
       BorderStyle = bsNone
       DataSource = dsMain
@@ -1026,35 +1026,35 @@ object frmCCJS_JournalRegLoadOrders: TfrmCCJS_JournalRegLoadOrders
         item
           Expanded = False
           FieldName = 'SloadDate'
-          Title.Caption = #1044#1072#1090#1072
+          Title.Caption = 'Дата'
           Width = 134
           Visible = True
         end
         item
           Expanded = False
           FieldName = 'SOperTypeLoad'
-          Title.Caption = #1054#1087#1077#1088#1072#1094#1080#1103' '#1079#1072#1075#1088#1091#1079#1082#1080' '#1085#1086#1074#1099#1093' '#1079#1072#1082#1072#1079#1086#1074
+          Title.Caption = 'Операция загрузки новых заказов'
           Width = 389
           Visible = True
         end
         item
           Expanded = False
           FieldName = 'SNoteLoad'
-          Title.Caption = #1057#1086#1076#1077#1088#1078#1072#1085#1080#1077' '#1079#1072#1075#1088#1091#1079#1082#1080' '#1085#1086#1074#1099#1093' '#1079#1072#1082#1072#1079#1086#1074
+          Title.Caption = 'Содержание загрузки новых заказов'
           Width = 200
           Visible = True
         end
         item
           Expanded = False
           FieldName = 'SOperTypeArmour'
-          Title.Caption = #1054#1087#1077#1088#1072#1094#1080#1103' '#1073#1088#1086#1085#1080#1088#1086#1074#1072#1085#1080#1103' '#1085#1086#1074#1099#1093' '#1079#1072#1082#1072#1079#1086#1074
+          Title.Caption = 'Операция бронирования новых заказов'
           Width = 220
           Visible = True
         end
         item
           Expanded = False
           FieldName = 'SNoteArmour'
-          Title.Caption = #1057#1086#1076#1077#1088#1078#1072#1085#1080#1077' '#1086#1073#1088#1086#1085#1080#1088#1086#1074#1072#1085#1080#1103' '#1085#1086#1074#1099#1093' '#1079#1072#1082#1072#1079#1086#1074
+          Title.Caption = 'Содержание обронирования новых заказов'
           Width = 770
           Visible = True
         end>
@@ -1066,14 +1066,14 @@ object frmCCJS_JournalRegLoadOrders: TfrmCCJS_JournalRegLoadOrders
     Top = 119
     object aMain_MainGridRefresh: TAction
       Category = 'Main'
-      Caption = #1054#1073#1085#1086#1074#1080#1090#1100
+      Caption = 'Обновить'
       ImageIndex = 4
       ShortCut = 116
       OnExecute = aMain_MainGridRefreshExecute
     end
     object aMain_Close: TAction
       Category = 'Main'
-      Caption = #1047#1072#1082#1088#1099#1090#1100
+      Caption = 'Закрыть'
       ImageIndex = 11
       ShortCut = 27
       OnExecute = aMain_CloseExecute

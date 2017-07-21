@@ -23,7 +23,7 @@ object FEnterpassw: TFEnterpassw
   object Image1: TImage
     Left = -1
     Top = 12
-    Width = 115
+    Width = 122
     Height = 125
     Picture.Data = {
       0A54504E474F626A65637489504E470D0A1A0A0000000D494844520000020000

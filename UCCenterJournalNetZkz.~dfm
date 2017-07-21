@@ -1,6 +1,6 @@
 object FCCenterJournalNetZkz: TFCCenterJournalNetZkz
-  Left = 63
-  Top = 68
+  Left = 52
+  Top = 96
   Width = 1280
   Height = 785
   Caption = 'ИНТЕРНЕТ-ЗАКАЗЫ 4.0.1707.1'
@@ -1656,7 +1656,7 @@ object FCCenterJournalNetZkz: TFCCenterJournalNetZkz
             Top = 417
             Width = 1021
             Height = 271
-            ActivePage = tabSlave_Order
+            ActivePage = tabSlave_Queue
             Align = alClient
             Constraints.MinHeight = 50
             Constraints.MinWidth = 50
@@ -1773,7 +1773,7 @@ object FCCenterJournalNetZkz: TFCCenterJournalNetZkz
                 object pnlSlave_Order_InfoLink: TPanel
                   Left = 876
                   Top = 0
-                  Width = 518
+                  Width = 198
                   Height = 26
                   Align = alClient
                   Alignment = taRightJustify
@@ -2323,14 +2323,14 @@ object FCCenterJournalNetZkz: TFCCenterJournalNetZkz
               object pnlSlave_Pay: TPanel
                 Left = 0
                 Top = 0
-                Width = 1005
+                Width = 1013
                 Height = 24
                 Align = alTop
                 BevelOuter = bvNone
                 Caption = 'pnlSlave_History'
                 TabOrder = 0
                 object pnlSlave_Pay_Show: TPanel
-                  Left = 866
+                  Left = 874
                   Top = 0
                   Width = 139
                   Height = 24
@@ -2341,7 +2341,7 @@ object FCCenterJournalNetZkz: TFCCenterJournalNetZkz
                 object pnlSlave_Pay_Tool: TPanel
                   Left = 0
                   Top = 0
-                  Width = 866
+                  Width = 874
                   Height = 24
                   Align = alClient
                   BevelOuter = bvNone
@@ -2349,7 +2349,7 @@ object FCCenterJournalNetZkz: TFCCenterJournalNetZkz
                   object toolbrJSO_Pay: TToolBar
                     Left = 0
                     Top = 0
-                    Width = 866
+                    Width = 874
                     Height = 24
                     Align = alClient
                     AutoSize = True
@@ -2391,8 +2391,8 @@ object FCCenterJournalNetZkz: TFCCenterJournalNetZkz
               object pnlSlave_PayGrid: TPanel
                 Left = 0
                 Top = 24
-                Width = 1005
-                Height = 154
+                Width = 1013
+                Height = 218
                 Align = alClient
                 BevelOuter = bvNone
                 Caption = 'pnlSlave_PayGrid'
@@ -2400,14 +2400,14 @@ object FCCenterJournalNetZkz: TFCCenterJournalNetZkz
                 object splitSlave_Pay: TSplitter
                   Left = 900
                   Top = 0
-                  Height = 154
+                  Height = 218
                   Beveled = True
                 end
                 object pnlSlave_PayGrid_Pay: TPanel
                   Left = 0
                   Top = 0
                   Width = 900
-                  Height = 154
+                  Height = 218
                   Align = alLeft
                   BevelOuter = bvNone
                   Caption = 'pnlSlave_PayGrid_Pay'
@@ -2416,7 +2416,7 @@ object FCCenterJournalNetZkz: TFCCenterJournalNetZkz
                     Left = 0
                     Top = 0
                     Width = 900
-                    Height = 154
+                    Height = 218
                     Align = alClient
                     BorderStyle = bsNone
                     Ctl3D = False
@@ -2501,8 +2501,8 @@ object FCCenterJournalNetZkz: TFCCenterJournalNetZkz
                 object pnlSlave_PayGrid_Check: TPanel
                   Left = 903
                   Top = 0
-                  Width = 102
-                  Height = 154
+                  Width = 110
+                  Height = 218
                   Align = alClient
                   BevelOuter = bvNone
                   Caption = 'pnlSlave_PayGrid_Check'
@@ -2510,14 +2510,14 @@ object FCCenterJournalNetZkz: TFCCenterJournalNetZkz
                   object pnlSlave_CheckControl: TPanel
                     Left = 0
                     Top = 0
-                    Width = 102
+                    Width = 110
                     Height = 21
                     Align = alTop
                     BevelOuter = bvNone
                     Caption = 'pnlSlave_CheckControl'
                     TabOrder = 0
                     object pnlSlave_CheckControl_Show: TPanel
-                      Left = 21
+                      Left = 29
                       Top = 0
                       Width = 81
                       Height = 21
@@ -2528,7 +2528,7 @@ object FCCenterJournalNetZkz: TFCCenterJournalNetZkz
                     object pnlSlave_CheckControl_Tool: TPanel
                       Left = 0
                       Top = 0
-                      Width = 21
+                      Width = 29
                       Height = 21
                       Align = alClient
                       Alignment = taLeftJustify
@@ -2546,8 +2546,8 @@ object FCCenterJournalNetZkz: TFCCenterJournalNetZkz
                   object gridSlave_Check: TDBGrid
                     Left = 0
                     Top = 21
-                    Width = 102
-                    Height = 133
+                    Width = 110
+                    Height = 197
                     Align = alClient
                     BorderStyle = bsNone
                     DataSource = dsJSOCheck
@@ -2599,14 +2599,14 @@ object FCCenterJournalNetZkz: TFCCenterJournalNetZkz
               object pnlSlave_NPostControl: TPanel
                 Left = 0
                 Top = 0
-                Width = 1511
+                Width = 1013
                 Height = 24
                 Align = alTop
                 BevelOuter = bvNone
                 Caption = 'pnlSlave_NPostControl'
                 TabOrder = 0
                 object pnlSlave_NPostControl_Show: TPanel
-                  Left = 1440
+                  Left = 942
                   Top = 0
                   Width = 71
                   Height = 24
@@ -2617,7 +2617,7 @@ object FCCenterJournalNetZkz: TFCCenterJournalNetZkz
                 object pnlSlave_NPostControl_Tool: TPanel
                   Left = 0
                   Top = 0
-                  Width = 1440
+                  Width = 942
                   Height = 24
                   Align = alClient
                   BevelOuter = bvNone
@@ -2625,7 +2625,7 @@ object FCCenterJournalNetZkz: TFCCenterJournalNetZkz
                   object toolbrJSO_NPost: TToolBar
                     Left = 0
                     Top = 0
-                    Width = 1440
+                    Width = 942
                     Height = 24
                     Align = alClient
                     Caption = 'toolbrJSO_NPost'
@@ -2643,8 +2643,8 @@ object FCCenterJournalNetZkz: TFCCenterJournalNetZkz
               object pnlSlave_NPostGrid: TPanel
                 Left = 0
                 Top = 24
-                Width = 1511
-                Height = 206
+                Width = 1013
+                Height = 218
                 Align = alClient
                 BevelOuter = bvNone
                 Caption = 'pnlSlave_NPostGrid'
@@ -2652,8 +2652,8 @@ object FCCenterJournalNetZkz: TFCCenterJournalNetZkz
                 object JSOGridNPost: TDBGrid
                   Left = 0
                   Top = 0
-                  Width = 1511
-                  Height = 206
+                  Width = 1013
+                  Height = 218
                   Align = alClient
                   BorderStyle = bsNone
                   Ctl3D = False
@@ -2840,14 +2840,14 @@ object FCCenterJournalNetZkz: TFCCenterJournalNetZkz
               object pnlSlave_NPostPayControl: TPanel
                 Left = 0
                 Top = 0
-                Width = 1511
+                Width = 1013
                 Height = 24
                 Align = alTop
                 BevelOuter = bvNone
                 Caption = 'pnlSlave_NPostPayControl'
                 TabOrder = 0
                 object pnlSlave_NPostPayControl_Show: TPanel
-                  Left = 1421
+                  Left = 923
                   Top = 0
                   Width = 90
                   Height = 24
@@ -2858,7 +2858,7 @@ object FCCenterJournalNetZkz: TFCCenterJournalNetZkz
                 object pnlSlave_NPostPayControl_Tool: TPanel
                   Left = 0
                   Top = 0
-                  Width = 1421
+                  Width = 923
                   Height = 24
                   Align = alClient
                   BevelOuter = bvNone
@@ -2868,8 +2868,8 @@ object FCCenterJournalNetZkz: TFCCenterJournalNetZkz
               object pnlSlave_NPostPayGrid: TPanel
                 Left = 0
                 Top = 24
-                Width = 1511
-                Height = 206
+                Width = 1013
+                Height = 218
                 Align = alClient
                 BevelOuter = bvNone
                 Caption = 'pnlSlave_NPostPayGrid'
@@ -2877,8 +2877,8 @@ object FCCenterJournalNetZkz: TFCCenterJournalNetZkz
                 object JSOGridNPostPay: TDBGrid
                   Left = 0
                   Top = 0
-                  Width = 1511
-                  Height = 206
+                  Width = 1013
+                  Height = 218
                   Align = alClient
                   BorderStyle = bsNone
                   Ctl3D = False
@@ -2973,14 +2973,14 @@ object FCCenterJournalNetZkz: TFCCenterJournalNetZkz
               object pnlSlave_TransactControl: TPanel
                 Left = 0
                 Top = 0
-                Width = 1005
+                Width = 1013
                 Height = 24
                 Align = alTop
                 BevelOuter = bvNone
                 Caption = 'pnlSlave_TransactControl'
                 TabOrder = 0
                 object pnlSlave_TransactControl_Show: TPanel
-                  Left = 915
+                  Left = 923
                   Top = 0
                   Width = 90
                   Height = 24
@@ -2991,7 +2991,7 @@ object FCCenterJournalNetZkz: TFCCenterJournalNetZkz
                 object pnlSlave_TransactionControl_Tool: TPanel
                   Left = 0
                   Top = 0
-                  Width = 915
+                  Width = 923
                   Height = 24
                   Align = alClient
                   BevelOuter = bvNone
@@ -3001,8 +3001,8 @@ object FCCenterJournalNetZkz: TFCCenterJournalNetZkz
               object pnlSlave_TransactionGrid: TPanel
                 Left = 0
                 Top = 24
-                Width = 1005
-                Height = 206
+                Width = 1013
+                Height = 218
                 Align = alClient
                 BevelOuter = bvNone
                 Caption = 'pnlSlave_TransactionGrid'
@@ -3010,8 +3010,8 @@ object FCCenterJournalNetZkz: TFCCenterJournalNetZkz
                 object JSOGridTransaction: TDBGrid
                   Left = 0
                   Top = 0
-                  Width = 1005
-                  Height = 206
+                  Width = 1013
+                  Height = 218
                   Align = alClient
                   BorderStyle = bsNone
                   Ctl3D = False
@@ -3054,14 +3054,14 @@ object FCCenterJournalNetZkz: TFCCenterJournalNetZkz
               object pnlSlave_History: TPanel
                 Left = 0
                 Top = 0
-                Width = 1005
+                Width = 1013
                 Height = 26
                 Align = alTop
                 BevelOuter = bvNone
                 Caption = 'pnlSlave_History'
                 TabOrder = 0
                 object pnlSlave_History_Show: TPanel
-                  Left = 866
+                  Left = 874
                   Top = 0
                   Width = 139
                   Height = 26
@@ -3072,7 +3072,7 @@ object FCCenterJournalNetZkz: TFCCenterJournalNetZkz
                 object pnlSlave_History_ToolBar: TPanel
                   Left = 0
                   Top = 0
-                  Width = 866
+                  Width = 874
                   Height = 26
                   Align = alClient
                   BevelOuter = bvNone
@@ -3080,7 +3080,7 @@ object FCCenterJournalNetZkz: TFCCenterJournalNetZkz
                   object toolbrJSO_Hist: TToolBar
                     Left = 0
                     Top = 0
-                    Width = 866
+                    Width = 874
                     Height = 26
                     Align = alClient
                     AutoSize = True
@@ -3112,8 +3112,8 @@ object FCCenterJournalNetZkz: TFCCenterJournalNetZkz
               object pnlSlave_HistoryGrid: TPanel
                 Left = 0
                 Top = 26
-                Width = 1005
-                Height = 204
+                Width = 1013
+                Height = 216
                 Align = alClient
                 BevelOuter = bvNone
                 Caption = 'pnlSlave_HistoryGrid'
@@ -3121,8 +3121,8 @@ object FCCenterJournalNetZkz: TFCCenterJournalNetZkz
                 object JSOGridHistory: TDBGrid
                   Left = 0
                   Top = 0
-                  Width = 1005
-                  Height = 204
+                  Width = 1013
+                  Height = 216
                   Align = alClient
                   BorderStyle = bsNone
                   DataSource = dsJSOHistory
@@ -7610,14 +7610,15 @@ object FCCenterJournalNetZkz: TFCCenterJournalNetZkz
     end
     object pmiDBGridMain_CurrentAmount: TMenuItem
       Action = aMain_jso_ArmorExec
-      Caption = 'Бронировать...'
+      Caption = 'Бронировать товар по заказу...'
     end
     object pmiDBGridMain_State: TMenuItem
       Action = aMain_OrderClose
-      Caption = 'Закрыть...'
+      Caption = 'Закрыть заказ...'
     end
     object pmiDBGridMain_OrderHeaderItem_Upd: TMenuItem
       Action = aMain_OrderHeaderItem_Upd
+      Caption = 'Реквизиты заказа (исправить)...'
     end
     object pmiDBGridMain_Ext: TMenuItem
       Caption = 'Дополнительные атрибуты'
@@ -7790,6 +7791,10 @@ object FCCenterJournalNetZkz: TFCCenterJournalNetZkz
       object N16: TMenuItem
         Action = aSyncStatusPay
       end
+    end
+    object CreateAAAAAAAAAAAAA: TMenuItem
+      Caption = 'Создать в аптеке заявку на склад...'
+      Enabled = False
     end
     object pmiDBGridMain_Delimiter02: TMenuItem
       Caption = '-'
